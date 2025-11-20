@@ -549,7 +549,7 @@ INDEX_HTML = """
                         <textarea id="event_text" name="event_text" placeholder="e.g., Suspicious PowerShell command that downloaded a file and set up a C2 channel" rows="6">{{ event_text }}</textarea>
                     </div>
 
-                    <h2 style="font-size: 1.1em; margin-top: 24px;"><span class="icon">⚙️</span> Configuration</h2>
+                    <h2 style="font-size: 1.1em; margin-top: 24px;"><span class="icon"></span> Configuration</h2>
 
                     <div class="input-row">
                         <div class="form-group">
@@ -585,7 +585,7 @@ INDEX_HTML = """
                     </div>
 
                     <div class="button-group">
-                        <button type="submit" class="btn-primary">🚀 Analyze</button>
+                        <button type="submit" class="btn-primary"> Analyze</button>
                         <a href="/download" class="btn-secondary" style="text-decoration: none; display: flex; align-items: center; justify-content: center;">⬇Download JSON</a>
                     </div>
                 </form>
