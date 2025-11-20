@@ -1,25 +1,25 @@
 {
-  "event": "Suspicious PowerShell command that downloaded a file and set up a C2 channel\r\n",
+  "event": "Suspicious PowerShell command that downloaded a file and set up a C2 channel",
   "mapped": [
-    "T1094",
     "T1059",
-    "T1222.002",
+    "T1094",
     "T1222.001",
-    "T1083",
     "T1222",
-    "T1059.003",
-    "T1146",
-    "T1675",
-    "T1609",
-    "T1651",
-    "T1070.003",
+    "T1083",
+    "T1222.002",
     "T1202",
     "T1027.010",
+    "T1651",
+    "T1070.003",
+    "T1675",
+    "T1609",
+    "T1146",
+    "T1059.003",
     "T1562.003",
-    "T1166",
-    "T1548.001",
     "T1564.001",
     "T1158",
+    "T1166",
+    "T1548.001",
     "T1041"
   ],
   "hypotheses": [
@@ -49,13 +49,15 @@
     {
       "path": [
         "T1059",
-        "T1027"
+        "T1610",
+        "T1562.013",
+        "T1222.001"
       ],
       "scores": {
         "matching": 0.5,
-        "success": 0.5,
-        "criticality": 0.5,
-        "overall": 0.5
+        "success": 0.71,
+        "criticality": 0.4,
+        "overall": 0.533
       }
     }
   ]

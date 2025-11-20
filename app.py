@@ -331,7 +331,6 @@ def index():
 
         out = {"event": event_text, "mapped": mapped, "hypotheses": hypotheses}
         save_output(out, "automa_output.json")
-
     return render_template_string(INDEX_HTML,
                                   event_text=event_text,
                                   mapped=mapped,
