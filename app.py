@@ -542,7 +542,7 @@ INDEX_HTML = """
         <div class="main-content">
             <!-- Input Panel -->
             <div class="card">
-                <h2><span class="icon">📝</span> Threat Event</h2>
+                <h2><span class="icon"></span> Threat Event</h2>
                 <form method="post" action="/">
                     <div class="form-group">
                         <label for="event_text">Describe the security event:</label>
@@ -586,14 +586,14 @@ INDEX_HTML = """
 
                     <div class="button-group">
                         <button type="submit" class="btn-primary">🚀 Analyze</button>
-                        <a href="/download" class="btn-secondary" style="text-decoration: none; display: flex; align-items: center; justify-content: center;">⬇️ Download JSON</a>
+                        <a href="/download" class="btn-secondary" style="text-decoration: none; display: flex; align-items: center; justify-content: center;">⬇Download JSON</a>
                     </div>
                 </form>
             </div>
 
             <!-- Info Panel -->
             <div class="card">
-                <h2><span class="icon">ℹ️</span> About AUTOMA</h2>
+                <h2><span class="icon"></span> About AUTOMA</h2>
                 <p style="color: #666; line-height: 1.6; margin-bottom: 16px;">
                     AUTOMA uses advanced threat mapping to analyze security events and identify potential attack chains using MITRE ATT&CK techniques.
                 </p>
@@ -607,7 +607,7 @@ INDEX_HTML = """
                     </ul>
                 </div>
                 <p style="color: #999; font-size: 0.85em;">
-                    💡 <strong>Tip:</strong> Provide detailed descriptions for better analysis results. Include observables, behaviors, and context.
+                 <strong>Tip:</strong> Provide detailed descriptions for better analysis results. Include observables, behaviors, and context.
                 </p>
             </div>
         </div>
@@ -615,7 +615,7 @@ INDEX_HTML = """
         <!-- Results Section -->
         {% if mapped %}
         <div class="results-card">
-            <h3>🎯 Mapped Techniques</h3>
+            <h3> Mapped Techniques</h3>
             <div class="technique-badges">
                 {% for t in mapped %}
                 <span class="badge">{{ t }}</span>
@@ -626,7 +626,7 @@ INDEX_HTML = """
 
         {% if hypotheses %}
         <div class="results-card">
-            <h3>📊 Top {{ top_k }} Attack Hypotheses</h3>
+            <h3> Top {{ top_k }} Attack Hypotheses</h3>
             <table class="hypotheses-table">
                 <thead>
                     <tr>
