@@ -350,10 +350,13 @@ def download():
     return send_file(p, as_attachment=True)
 
 if __name__ == "__main__":
+    import os
     # run dev server
-    print("Starting AUTOMA Flask app on http://127.0.0.1:5000")
+    port = int(os.environ.get('PORT', 5000))
+    host = os.environ.get('HOST', '0.0.0.0')
+    print(f"Starting AUTOMA Flask app on http://{host}:{port}")
     if HAVE_RAPIDFUZZ:
         print("RapidFuzz detected: using it for fuzzy matching.")
     else:
         print("RapidFuzz not found: using difflib fallback for fuzzy matching.")
-    app.run(debug=True)
+    app.run(host=host, port=port, debug=False)
